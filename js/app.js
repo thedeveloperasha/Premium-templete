@@ -20,48 +20,48 @@ $(document).ready(function () {
         }
     })
 
-    $('#project-slider').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav:true,
-        dots: false,
-        navText: ['PREV', 'NEXT'],
-        smartSpeed: 1000,
-        margin:24,
-        responsive: {
-            0: {
-             
-            },
-            768: {
-              
-            },
-            1140: {
-                items: 2,center: true,
-            }
-        }
-    })
-
-
-
     // $('#project-slider').owlCarousel({
     //     loop: true,
-    //     nav: false,
-    //     items: 2,
-    //     dots: true,
-    //     smartSpeed: 600,
-    //     center: true,
-    //     autoplay: true,
-    //     autoplayTimeout: 4000,
-    //     responsive: {
+    //     margin: 0,
+    //     nav:true,
+    //     dots: false,
+    //     navText: ['PREV', 'NEXT'],
+    //     smartSpeed: 1000,
+    //     margin:24,
+    //     responsive: { 
     //         0: {
-    //             items: 1
+             
     //         },
     //         768: {
-    //             items: 2,
-    //             margin: 8,
+              
+    //         },
+    //         1140: {
+    //             items: 2,center: true,
     //         }
     //     }
     // })
+
+
+
+    $('#project-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        items: 2,
+        dots: true,
+        smartSpeed: 600,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2,
+                margin: 8,
+            }
+        }
+    })
 
     $('.reviews-slider').owlCarousel({
         loop: true,
