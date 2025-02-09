@@ -30,13 +30,16 @@ $(document).ready(function () {
     //     margin:24,
     //     responsive: { 
     //         0: {
-             
+    //          item: 1,
+    //          nav:false,
+    //          margin:0,
     //         },
     //         768: {
-              
+    //           item:2,
     //         },
     //         1140: {
-    //             items: 2,center: true,
+    //             items: 2,
+    //             center: true,
     //         }
     //     }
     // })
@@ -63,7 +66,7 @@ $(document).ready(function () {
         }
     })
 
-    $('.reviews-slider').owlCarousel({
+    $('.owl-carousel').owlCarousel({
         loop: true,
         nav: false,
         dots: true,

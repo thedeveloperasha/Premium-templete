@@ -7,7 +7,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-weight: 700 !important;
+    font-weight: 700 ;
     color: #092032;
 }
 
@@ -16,6 +16,9 @@ a{
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 400;
+}
+a:hover{
+    color: #ff4d29;
 }
 
 img {
@@ -112,6 +115,9 @@ section {
 }
 
 /*Slider*/
+#hero-slider{
+    font-weight: 700 !important ;
+}
 .slide1 {
     background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)),url(/img/bg_banner1.jpg);
 
@@ -120,6 +126,9 @@ section {
     background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)),url(/img/bg_banner2.jpg);
 
 }
+
+
+
 /*  owl carousel  */
 .owl-prev,
 .owl-next {
@@ -196,17 +205,21 @@ section {
 #project-slider .owl-prev{
     background-color: #ffffff58 !important;
 }
+#project-slider .owl-next:hover,
+#project-slider .owl-prev:hover{
+    background-color: #ff4d29 !important;
+}
 
 .project{
     position: relative;
 }
 .project .overlay{
-    background-color: linear-gradient(to top,rgb(9,32,50,0.0),rgb(9,32,50,0.8));
+    background: linear-gradient( to bottom ,rgba(9,32,50,0.0),rgba(9,32,50,0.8));
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 240px;
+    height: 200px;
 }
 .project .content{
     position: absolute;
@@ -236,13 +249,139 @@ section {
 }
 
 
+/*    TEAM*/
 
+.team-member{
+    text-align: center;
+}
+.team-member .img-wrapper{
+    position: relative;
+    overflow: hidden;
 
+}
+.team-member .overlay{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100% ;
+    height: 100%;
+    background-color: rgba(255,77,41,0.9);
+    transition: all 0.4s ease;
+    opacity: 0 ;
+}
+.team-member .social-links{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+    transition: all 0.4s ease;
+    opacity: 0;
+}
 
+.team-member:hover .overlay{
+    opacity: 1;
+    top: 0;
+}
+.team-member:hover .social-links{
+    opacity: 1;
+    top: 50%;
+}
+.team-member h5{
+    margin-top: 24px;
+}
 
+/*    REVIEWS*/
 
+#reviews {
+    background: linear-gradient(rgba(9,32,50,0.8),rgba(9,32,50,0.8)),url(/img/bg_banner1.jpg);
 
+}
+.review{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
 
+.review img{
+    width: 85px !important;
+    border-radius: 1000px;
+    margin: auto;
+}
+
+.review h4,
+.review p{
+    color: #fff;
+}
+.review small{
+    color: #ff4d29;
+}
+
+.owl-dot .active span{
+    background-color: #ff4d29 !important;
+}
+
+/*    BLOG*/
+.blog-post{
+    position: relative;
+}
+.blog-post .tag{
+    position: absolute;
+    padding: 4px 12px;
+    background-color: #ff4d29;
+    color: #fff;
+    border-radius: 100px ;
+    top: 20px;
+    left: 20px;
+}
+
+.blog-post a{
+    font-weight: 700;
+}
+.blog-post img{
+    margin-bottom: 12px;
+}
+.blog-post h4{
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
+.blog-post small{
+    color: #ff4d29;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*---footer---*/
+footer{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(rgba(9,32,50,0.8),rgba(9,32,50,0.8)),url(/img/bg_banner1.jpg);
+}
+
+footer .navbar-brand{
+    color: #ffffff;
+    margin-bottom: 28px;
+}
+
+.footer-top{
+    margin-bottom: 40px;
+}
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,0.08);
+   padding-top: 20px;
+}
+footer .social-links a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*---form ---*/
+.form-control:focus{
+    box-shadow: none;
+    border-color: #ff4d29 ;
+}
 
 
 
